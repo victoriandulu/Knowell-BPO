@@ -1,5 +1,5 @@
 /* Header Styling */
-/* Header Styling */
+
 header {
     background-color: #FFFFFF; /* White background */
     padding: 0;
@@ -9,15 +9,23 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Allow items to wrap on small screens */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Ensure it's at the top of the page */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width of the viewport */
+    z-index: 999; /* High z-index to ensure it stays above all other content */
 }
 
-/* Base Styles */
+/* Body Padding Adjustment */
+body {
+    padding-top: 80px; /* Adjust this to match your header's height */
+}
+
+/* Ensure container fits well */
 .container {
     display: flex; /* Display items in a row */
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Space between logo and button */
-    position: relative; /* For positioning elements */
-    transition: all 0.3s ease; /* Smooth transition */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Center the container */
@@ -158,12 +166,13 @@ header {
 
 
 /* Footer Styles */
+/* Footer Styles */
 .footer {
     background-color: #0A2342; /* Dark Blue */
     color: #FFFFFF; /* White text */
     text-align: center;
-    padding: 0;
-    height: 250px;
+    padding: 20px 0;
+    height: auto; /* Allow height to adjust based on content */
 }
 
 .footer-container {
@@ -172,16 +181,18 @@ header {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .quick-links, .social-media, .contact-info, .newsletter {
     flex: 1; /* Allow each section to take equal space */
     padding: 10px;
-    min-width: 200px; /* Minimum width to maintain layout */
+    min-width: 200px; /* Maintain minimum width */
 }
 
 .quick-links h3, .social-media h3, .contact-info h3, .newsletter h3 {
     margin-bottom: 10px;
+    font-size: 1.25rem; /* Slightly larger headings */
 }
 
 .quick-links ul {
@@ -236,6 +247,53 @@ header {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center; /* Center-align the sections */
+    }
+
+    .quick-links, .social-media, .contact-info, .newsletter {
+        flex: unset; /* Remove equal space behavior */
+        width: 100%; /* Make each section full width */
+        margin-bottom: 20px; /* Add space between sections */
+        text-align: center; /* Center-align text and content */
+    }
+
+    .newsletter input[type="email"] {
+        width: 80%; /* Increase the input width for smaller screens */
+    }
+
+    .social-media a {
+        display: inline-block;
+        margin: 5px; /* Add more space between social media icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 10px; /* Adjust padding for extra space */
+    }
+
+    .quick-links, .social-media, .contact-info, .newsletter {
+        width: 100%; /* Full width for all sections */
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%; /* Full width input for the smallest screens */
+    }
+
+    .newsletter button {
+        width: 100%; /* Full width button for mobile */
+        margin-top: 10px; /* Space between input and button */
+    }
+
+    .social-media a {
+        margin: 10px; /* Increase space between icons */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack navbar elements vertically */
         align-items: center; /* Center align elements */
@@ -270,10 +328,7 @@ header {
         align-items: center; /* Center align elements */
     }
 
-    .footer {
-        height: auto; /* Adjust height for footer to fit content */
-        padding: 20px 0; /* Add more padding for mobile */
-    }
+
 }
 /* Hero Section Styling */
 .hero-section {
@@ -357,6 +412,11 @@ header {
 
     .cta-button {
         font-size: 0.9rem;
+    }
+    .container.active {
+        height: 100vh;
+        overflow: hidden;
+        z-index: 3; /* Ensure sidebar is above all other content */
     }
 }
 /* services css */
@@ -630,7 +690,7 @@ blockquote {
 }
 /* Industries served */
 /* Industries Header */
-.industries-header {
+.industries-section {
     background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
 
     padding: 50px;

@@ -1,10 +1,10 @@
 @extends('layouts.app') <!-- Extending the main layout -->
 
 @section('content')
-    <header class="contact-header">
+    <section class="contact-header">
         <h1>Get in Touch with Us</h1>
         <p>We're here to help! Fill out the form below to reach out or use the contact information to get in touch directly.</p>
-    </header>
+    </section>
 
     <!-- Contact Form Section -->
     <section class="contact-form-section">

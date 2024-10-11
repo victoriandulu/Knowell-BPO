@@ -1,10 +1,10 @@
 @extends('layouts.app') <!-- Extending the main layout -->
 
 @section('content')
-    <header class="about-header">
+    <section class="about-header">
         <h1>About Knowell BPO</h1>
         <p>Knowell BPO, a leader in data analytics outsourcing, has been transforming data into actionable insights since 2006.</p>
-    </header>
+    </section>
 
     <section class="mission-section">
         <h2>Our Mission</h2>

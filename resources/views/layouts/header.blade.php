@@ -1,4 +1,5 @@
 <header>
+    <div class="main-header">
     <div class="container">
         <img src="{{ asset('images/company-logo.jpeg') }}" alt="Company Logo" class="logo">
         <button class="hamburger" id="hamburger">
@@ -18,6 +19,7 @@
             <a href="/consultation" class="btn-consultation">Get a Free Consultation</a>
         </div>
     </div>
+    <div>
 </header>
 
 <script>

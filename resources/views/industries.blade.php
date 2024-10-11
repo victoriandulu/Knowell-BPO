@@ -4,10 +4,10 @@
 
 @section('content')
     <!-- Intro Section -->
-    <header class="industries-header">
+    <section class="industries-section">
         <h1>Industries We Serve</h1>
         <p>From finance to e-commerce, Knowell BPO serves a wide range of industries with specialized data analytics solutions.</p>
-    </header>
+    </section>
 
     <!-- Industries Section -->
     <section class="industries-overview">

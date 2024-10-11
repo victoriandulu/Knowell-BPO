@@ -3,10 +3,10 @@
 @extends('layouts.app') <!-- Extending the main layout -->
 
 @section('content')
-    <header class="case-studies-header">
+    <section class="case-studies-header">
         <h1>Success Stories from Our Clients</h1>
         <p>See how our data analytics solutions have made a difference for our clients around the world.</p>
-    </header>
+    </section>
 
     <section class="case-studies-container">
         <article class="case-study">

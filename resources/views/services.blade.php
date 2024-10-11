@@ -3,10 +3,10 @@
 @section('title', 'Outsourcing and Offshore Data Analytics Services')
 
 @section('content')
-    <header class="services-header">
+    <section class="services-header">
         <h1>Outsourcing and Offshore Data Analytics Services</h1>
         <p>Knowell BPO offers tailored outsourcing solutions, providing expert data analysis teams and round-the-clock support for businesses around the globe.</p>
-    </header>
+    </section>
 
     <section class="services-overview">
         <h2>Services Overview</h2>
