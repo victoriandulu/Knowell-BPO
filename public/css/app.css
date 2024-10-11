@@ -77,8 +77,9 @@ body {
 }
 
 /* Hamburger Icon Styles */
+/* Base Styles */
 .hamburger {
-    display: none; /* Hide by default */
+    display: none; /* Hide by default on larger screens */
     flex-direction: column;
     cursor: pointer;
     background: none;
@@ -93,6 +94,14 @@ body {
     margin: 3px 0; /* Space between lines */
     transition: all 0.3s ease; /* Smooth transition */
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Show the hamburger menu */
+
+}
+
+/* Other styles continue... */
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -120,16 +129,29 @@ body {
     .logo {
         width: 80px; /* Adjust logo size for small screens */
         margin-bottom: 20px; /* Add some space below the logo */
+        align-self: flex-start; /* Align logo to the left */
     }
 
     /* Show the hamburger menu */
     .hamburger {
-        display: flex; /* Display hamburger menu */
-        cursor: pointer;
+        display: flex; /* Display hamburger menu on small screens */
         position: absolute; /* Keep it at the top right */
         top: 20px; /* Position from the top */
         right: 20px; /* Position from the right */
         z-index: 3; /* Above other elements */
+    }
+
+    /* When hamburger is open */
+    .hamburger.open .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); /* First line rotates */
+    }
+
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0; /* Hide the middle line */
+    }
+
+    .hamburger.open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px); /* Last line rotates */
     }
 
     /* Hide the navbar on small screens */
@@ -139,10 +161,10 @@ body {
 
     /* Show nav links when active */
     .nav-links {
-        display: none; /* Hidden initially */
-        margin-top: 10px; /* Space below the logo */
+        display: flex; /* Display nav links as a flexbox */
         flex-direction: column; /* Stack links vertically */
         width: 100%; /* Full width */
+        margin-top: 10px; /* Space below the logo */
     }
 
     /* Show nav links when active */
@@ -153,6 +175,9 @@ body {
     /* Show the consultation button below the nav links */
     .btn-consultation {
         display: none; /* Hidden initially */
+        margin-top: 10px; /* Space above the button */
+        width: 100%; /* Full width */
+        text-align: left; /* Align text to the left */
     }
 
     /* Show the consultation button when nav-links are active */
@@ -160,12 +185,10 @@ body {
         display: block; /* Show consultation button */
         margin-top: 10px; /* Space above the button */
         width: 100%; /* Full width */
-        text-align: center; /* Center text */
+        text-align: left; /* Center text */
     }
 }
 
-
-/* Footer Styles */
 /* Footer Styles */
 .footer {
     background-color: #0A2342; /* Dark Blue */
@@ -1226,4 +1249,18 @@ blockquote {
     .schedule-call-section h2 {
         font-size: 1.8rem;
     }
+}
+/*The up button  */
+#scrollToTop {
+    background-color: #0A2342; /* Dark Blue */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #00B3E6; /* Bright Cyan on hover */
 }

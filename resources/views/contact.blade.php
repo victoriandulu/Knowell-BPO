@@ -56,6 +56,6 @@
     <!-- Schedule a Call Section -->
     <section class="schedule-call-section">
         <h2>Schedule a Call</h2>
-        <a href="https://calendly.com/your-calendar-link" class="btn-schedule">Book a Free Consultation</a>
+        <a href="https://calendly.com/judyvicm1/a-free-consultation" class="btn-schedule">Book a Free Consultation</a>
     </section>
 @endsection

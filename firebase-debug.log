@@ -1,0 +1,46 @@
+[debug] [2024-10-11T11:10:04.037Z] ----------------------------------------------------------------------
+[debug] [2024-10-11T11:10:04.044Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-10-11T11:10:04.045Z] CLI Version:   13.22.0
+[debug] [2024-10-11T11:10:04.045Z] Platform:      win32
+[debug] [2024-10-11T11:10:04.045Z] Node Version:  v20.16.0
+[debug] [2024-10-11T11:10:04.045Z] Time:          Fri Oct 11 2024 14:10:04 GMT+0300 (East Africa Time)
+[debug] [2024-10-11T11:10:04.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-11T11:10:04.056Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-11T11:10:04.057Z] > authorizing via signed-in user (judyvicm1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\knowell-bpo
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-11T11:11:55.034Z] Checked if tokens are valid: true, expires at: 1728648562263
+[debug] [2024-10-11T11:11:55.035Z] Checked if tokens are valid: true, expires at: 1728648562263
+[debug] [2024-10-11T11:11:55.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-10-11T11:11:56.293Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-11T11:11:56.293Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project knowell-bpos (Knowell-BPOs) 
+[info] 
+=== Hosting Setup
+[debug] [2024-10-11T11:12:23.627Z] Checked if tokens are valid: true, expires at: 1728648562263
+[debug] [2024-10-11T11:12:23.628Z] Checked if tokens are valid: true, expires at: 1728648562263
+[debug] [2024-10-11T11:12:23.628Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/knowell-bpos [none]
+[debug] [2024-10-11T11:12:24.267Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/knowell-bpos 200
+[debug] [2024-10-11T11:12:24.268Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/knowell-bpos {"projectId":"knowell-bpos","projectNumber":"460749218449","displayName":"Knowell-BPOs","name":"projects/knowell-bpos","resources":{"hostingSite":"knowell-bpos"},"state":"ACTIVE","etag":"1_0487f496-04f6-458f-adf7-afb50afe65f7"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
