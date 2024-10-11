@@ -160,16 +160,17 @@
 
     </div>
      <!-- Why Choose Us Section -->
-     <section class="why-choose-us">
-        <h2>Why Choose Us</h2>
-        <ul>
-            <li>Cost-Efficiency</li>
-            <li>Access to Expert Analysts</li>
-            <li>Customizable Solutions</li>
-            <li>Real-Time Insights</li>
-            <li>Secure Data Handling</li>
-        </ul>
-    </section>
+<section class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <ul>
+        <li>Cost-Efficiency</li>
+        <li>Access to Expert Analysts</li>
+        <li>Customizable Solutions</li>
+        <li>Real-Time Insights</li>
+        <li>Secure Data Handling</li>
+    </ul>
+</section>
+
 
     <!-- Client Testimonials Section -->
     <section class="client-testimonials">
