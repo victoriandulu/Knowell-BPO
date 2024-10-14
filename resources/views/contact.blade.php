@@ -1,4 +1,4 @@
-@extends('layouts.app') <!-- Extending the main layout -->
+@extends('layouts.app')
 
 @section('content')
     <section class="contact-header">
@@ -6,11 +6,11 @@
         <p>We're here to help! Fill out the form below to reach out or use the contact information to get in touch directly.</p>
     </section>
 
-    <!-- Contact Form Section -->
+
     <section class="contact-form-section">
         <h2>Contact Us</h2>
         <form action="#" method="POST" class="contact-form">
-            @csrf <!-- Laravel CSRF token -->
+            @csrf
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>

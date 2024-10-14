@@ -1,6 +1,5 @@
-<!-- case.blade.php -->
 
-@extends('layouts.app') <!-- Extending the main layout -->
+@extends('layouts.app')
 
 @section('content')
     <section class="case-studies-header">
